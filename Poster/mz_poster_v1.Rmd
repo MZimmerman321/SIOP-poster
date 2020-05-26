@@ -36,11 +36,11 @@ main_textcol:    "#009374"         #Color of txt
 main_findings:
   - "**Interests** and **self-efficacy** largely capture the **same** underlying attitudes toward work tasks." 
                             #Image middle main, use main_picwidth f/size
-  - '![This should be the radar plot](C:\Users\Matth\Pictures\placeholder1.jpg){.main_pic}'
+  - '![This should be the radar plot](images\placeholder1.jpg){.main_pic}'
                             #Bottom left main section image
-logoleft_name: '![QR code for paper](C:\Users\Matth\Pictures\placeholder2.jpg){.main-img-left}'    
+logoleft_name: '![QR code for paper](images\placeholder2.jpg){.main-img-left}'    
                             #Bottom right main section image 
-logoright_name: '![Lab logo?](C:\Users\Matth\Pictures\placeholder3.jpg){.main-img-right}' 
+logoright_name: '![Lab logo?](images\placeholder3.jpg){.main-img-right}' 
                             #Final output options
 output: 
   posterdown::posterdown_betterland: 
@@ -74,7 +74,7 @@ knitr::write_bib(c('posterdown', 'rmarkdown','pagedown'), 'packages.bib')
 - Interactions between interests (**I**) and self-efficacy (**SE**), modeled by social cognitive carreer theory (SSCT), are used to predict domain relevent carreer paths. 
 - **SE** is a precursor to **I** development, implying the two constructs are ‘related but distinct’. 
 
-![SCCT Flowchart?](C:\Users\Matth\Pictures\placeholder4.jpg)
+![SCCT Flowchart?](images\placeholder4.jpg)
 
 - Previous meta-analytic results have found strong mean correlations between the two. Exsisting heterogeneity is attributed to tangible differences between the constructs. 
 - Specfically, SE is capturing specific orientations toward work activities that interest measures alone can not capture.
@@ -86,7 +86,7 @@ knitr::write_bib(c('posterdown', 'rmarkdown','pagedown'), 'packages.bib')
    2. Analyzing the structre of cross method corrallations.
    3. Using multi-trait multi-method (MMTM) factor analysis for each construct
 
-![RIASEC Hexagon](C:\Users\Matth\Pictures\placeholder5.jpg)
+![RIASEC Hexagon](images\placeholder5.jpg)
 
 - The structure of RIASEC interests is represented as a hexagon.
 - If SE is tangibly different from I in this context, its structure orintation should be capturing more information than an I measure alone. 
@@ -106,14 +106,14 @@ knitr::write_bib(c('posterdown', 'rmarkdown','pagedown'), 'packages.bib')
 # Results
 
 Cross method data
-![](C:\Users\Matth\Pictures\placeholder4.jpg)
+![](images\placeholder4.jpg)
 
 ```{r, , fig.cap='#hetero-trait, hetero-method (table 4 in paper)', out.width="80%"}
 #hetero-trait, hetero-method (table 4 in paper)
 ```
 
 Factor analysis data
-![](C:\Users\Matth\Pictures\placeholder5.jpg)
+![](images\placeholder5.jpg)
 
 ```{r myprettycode, echo=FALSE,collapse=TRUE, fig.cap='latent variable factor loadings (table 5 in paper)', fig.height=3.5, out.width="80%"}
 #how to trim potential whitespace (included from reference guide)
