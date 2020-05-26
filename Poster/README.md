@@ -20,3 +20,4 @@ Main package used to format the poster is [posterdown](https://github.com/brentt
    
    - I would like to move the middle text in the center a bit higher. 
 - Make new QR code to access full paper
+- Do we have a lab logo/sQuid? 
