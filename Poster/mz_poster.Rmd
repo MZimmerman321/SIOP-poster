@@ -39,9 +39,9 @@ main_findings:
   - '![This should be the radar plot](images\radarplot_old.jpg){.main_pic}'
 main_picwidth: 75%
                             #Bottom left main section image
-logoleft_name: '![QR code for paper](images\placeholder2.jpg){.main-img-left}'    
+logoleft_name: '![QR code for paper](images\placeholder1.jpg){.main-img-left}'    
                             #Bottom right main section image 
-logoright_name: '![Do we have a lab logo? USF logo?](images\placeholder3.jpg){.main-img-right}' 
+logoright_name: '![Do we have a lab logo? USF logo?](images\placeholder2.jpg){.main-img-right}' 
                             #Final output options
 output: 
   posterdown::posterdown_betterland: 
@@ -75,7 +75,7 @@ knitr::write_bib(c('posterdown', 'rmarkdown','pagedown'), 'packages.bib')
 - Interactions between interests (**I**) and self-efficacy (**SE**), modeled by social cognitive carreer theory (SSCT), are used to predict domain relevent carreer paths. 
 - **SE** is a precursor to **I** development, implying the two constructs are ‘related but distinct’. 
 
-![SCCT Flowchart?](images\placeholder4.jpg)
+![SCCT Flowchart?](images\placeholder3.jpg)
 
 - Previous meta-analytic results have found strong mean correlations between the two. Exsisting heterogeneity is attributed to tangible differences between the constructs. 
 - Specfically, SE is capturing specific orientations toward work activities that interest measures alone can not capture.
@@ -87,7 +87,7 @@ knitr::write_bib(c('posterdown', 'rmarkdown','pagedown'), 'packages.bib')
    2. Analyzing the structre of cross method corrallations.
    3. Using multi-trait multi-method (MMTM) factor analysis for each construct
 
-![RIASEC Hexagon](images\placeholder5.jpg)
+![RIASEC Hexagon](images\placeholder4.jpg)
 
 - The structure of RIASEC interests is represented as a hexagon.
 - If SE is tangibly different from I in this context, its structure orintation should be capturing more information than an I measure alone. 
@@ -107,7 +107,7 @@ knitr::write_bib(c('posterdown', 'rmarkdown','pagedown'), 'packages.bib')
 # Results
 
 Cross method data
-![](images\placeholder4.jpg)
+![](images\placeholder5.jpg)
 
 ```{r, , fig.cap='#hetero-trait, hetero-method (table 4 in paper)', out.width="80%"}
 #hetero-trait, hetero-method (table 4 in paper)
