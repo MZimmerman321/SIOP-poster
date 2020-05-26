@@ -72,13 +72,13 @@ knitr::write_bib(c('posterdown', 'rmarkdown','pagedown'), 'packages.bib')
 
 # Introduction
 
-- Interactions between interests (**I**) and self-efficacy (**SE**), modeled by social cognitive carreer theory (SSCT), are used to predict domain relevent carreer paths. 
+- Interactions between interests (**I**) and self-efficacy (**SE**), modeled by social cognitive career theory (SSCT), are used to predict domain relevent carreer paths. 
 - **SE** is a precursor to **I** development, implying the two constructs are ‘related but distinct’. 
 
 ![SCCT Flowchart?](images\placeholder3.jpg)
 
 - Previous meta-analytic results have found strong mean correlations between the two. Exsisting heterogeneity is attributed to tangible differences between the constructs. 
-- Specfically, SE is capturing specific orientations toward work activities that interest measures alone can not capture.
+- Specifically, SE is capturing specific orientations toward work activities that interest measures alone can not capture.
 
 # Objectives
 
