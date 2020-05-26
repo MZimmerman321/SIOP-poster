@@ -41,7 +41,7 @@ main_picwidth: 75%
                             #Bottom left main section image
 logoleft_name: '![QR code for paper](images\placeholder2.jpg){.main-img-left}'    
                             #Bottom right main section image 
-logoright_name: '![Lab logo?](images\placeholder3.jpg){.main-img-right}' 
+logoright_name: '![Do we have a lab logo? USF logo?](images\placeholder3.jpg){.main-img-right}' 
                             #Final output options
 output: 
   posterdown::posterdown_betterland: 
