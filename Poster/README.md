@@ -4,4 +4,4 @@ The html file is what the last knited poster looks like. If changes were made lo
 
 Images file is where I currentlly have the placeholeder images. 
 
-The mz_poster_files folder is output from the rmd file
+The mz_poster_files folder is output. (If there was any)
