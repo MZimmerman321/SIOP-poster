@@ -29,14 +29,15 @@ affiliation:
 font_family: "Frutiger" 
 body_textcol: "#FFFFFF"            #Txt color
 body_textsize: ""
-                            #Txt and images middle section (main) of poster
-main_fontfamily: "Schoolbell"         #Font (use main_textsize f/ size change)
+                            #Txt and images middle section (main) of posterSchoolbell
+main_fontfamily: "Frutiger"         #Font (use main_textsize f/ size change)
 main_textcol:    "#009374"         #Color of txt 
                             #Content in main section
 main_findings:
   - "**Interests** and **self-efficacy** largely capture the **same** underlying attitudes toward work tasks." 
                             #Image middle main, use main_picwidth f/size
-  - '![This should be the radar plot](images\placeholder1.jpg){.main_pic}'
+  - '![This should be the radar plot](images\radarplot_old.jpg){.main_pic}'
+main_picwidth: 75%
                             #Bottom left main section image
 logoleft_name: '![QR code for paper](images\placeholder2.jpg){.main-img-left}'    
                             #Bottom right main section image 
