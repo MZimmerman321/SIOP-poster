@@ -1,0 +1,126 @@
+---
+                            #color options for background
+body_bgcol: "#006747"       #left and right sides (body)
+primary_colour: "#CFC493"   #Upper half of middle section (main) and names
+secondary_colour: "#EDEBD1" #Bottom half of middle section
+accent_colour: "#9CCB3B"    #Color of super scripts and ??
+                            #Txt options for title, author, affiliation, etc.
+title_textsize: ""          #To change size of title 
+title: "Interests and Self Efficacy: Distinct Constructs?"
+title_textcol: "#ACEDFF"
+author_textsize: ""         #Txt size of author txt
+author_textcol:  ""         #Txt color of authors
+author:
+  - name: Matthew Zimmerman
+    affil: 1
+    email: mdzimmerman@usf.edu
+    main: true
+  - name: Brenton Wiernik
+    affil: 1
+    twitter: bmwiernik
+    email: wiernik@usf.edu
+    orcid: 
+    main: true
+affiliation_textcol: "#EDEBD1"     #Color of affiliation txt
+affiliation:
+  - num: 1
+    address: Department of Psycology, University of South Florida
+                            #txt options body of poster 
+font_family: "Frutiger" 
+body_textcol: "#FFFFFF"            #Txt color
+body_textsize: ""
+                            #Txt and images middle section (main) of poster
+main_fontfamily: "Schoolbell"         #Font (use main_textsize f/ size change)
+main_textcol:    "#009374"         #Color of txt 
+                            #Content in main section
+main_findings:
+  - "**Interests** and **self-efficacy** largely capture the **same** underlying attitudes toward work tasks." 
+                            #Image middle main, use main_picwidth f/size
+  - '![This should be the radar plot](C:\Users\Matth\Pictures\placeholder1.jpg){.main_pic}'
+                            #Bottom left main section image
+logoleft_name: '![QR code for paper](C:\Users\Matth\Pictures\placeholder2.jpg){.main-img-left}'    
+                            #Bottom right main section image 
+logoright_name: '![Lab logo?](C:\Users\Matth\Pictures\placeholder3.jpg){.main-img-right}' 
+                            #Final output options
+output: 
+  posterdown::posterdown_betterland: 
+    self_contained: false
+    pandoc_args: --mathjax
+    highlight: espresso
+    number_sections: false
+link-citations: True
+bibliography: packages.bib 
+#After knit open output in browser and then save as PDF, make sure to include background graphics. output directly to pdf is sus.
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(results = 'asis',
+                      echo = FALSE,
+                      warning = FALSE,
+                      tidy = FALSE,
+                      message = FALSE,
+                      fig.align = 'center',
+                      out.width = "100%")
+options(knitr.table.format = "html") 
+```
+
+
+```{r, include=FALSE}
+knitr::write_bib(c('posterdown', 'rmarkdown','pagedown'), 'packages.bib')
+```
+
+# Introduction
+
+- Interactions between interests (**I**) and self-efficacy (**SE**), modeled by social cognitive carreer theory (SSCT), are used to predict domain relevent carreer paths. 
+- **SE** is a precursor to **I** development, implying the two constructs are ‘related but distinct’. 
+
+![SCCT Flowchart?](C:\Users\Matth\Pictures\placeholder4.jpg)
+
+- Previous meta-analytic results have found strong mean correlations between the two. Exsisting heterogeneity is attributed to tangible differences between the constructs. 
+- Specfically, SE is capturing specific orientations toward work activities that interest measures alone can not capture.
+
+# Objectives
+
+- Illumintate potential measurement artefacts between I and SE measures by: 
+   1. Determining convergence between I and SE measures. 
+   2. Analyzing the structre of cross method corrallations.
+   3. Using multi-trait multi-method (MMTM) factor analysis for each construct
+
+![RIASEC Hexagon](C:\Users\Matth\Pictures\placeholder5.jpg)
+
+- The structure of RIASEC interests is represented as a hexagon.
+- If SE is tangibly different from I in this context, its structure orintation should be capturing more information than an I measure alone. 
+
+# Methods
+
+- An exhaustive literature search resulted in 292 studies with unique samples made up of 834,087 people. 
+- Correlations were calculated using the R package psychmeta. 
+- The MMTM analysis a correlated-traits, correlated-uniqueness (CTCU) model was fit to a synthetic meta-analytic correlation matrix constructed to reflect meta-analytic mean observed (not corrected for unreliability) correlations among:
+   1. Typical RIASEC interest scales
+   2. Typical RIASEC self-efficacy scales
+   3. RIASEC interest scales drawn from a different inventories
+- To account for method variance the uniqueness's for the six scales from the same method to covary.
+- Confidence intervals, were found through the harmonic mean sample size across included correlations.
+
+
+# Results
+
+Cross method data
+![](C:\Users\Matth\Pictures\placeholder4.jpg)
+
+```{r, , fig.cap='#hetero-trait, hetero-method (table 4 in paper)', out.width="80%"}
+#hetero-trait, hetero-method (table 4 in paper)
+```
+
+Factor analysis data
+![](C:\Users\Matth\Pictures\placeholder5.jpg)
+
+```{r myprettycode, echo=FALSE,collapse=TRUE, fig.cap='latent variable factor loadings (table 5 in paper)', fig.height=3.5, out.width="80%"}
+#how to trim potential whitespace (included from reference guide)
+par(mar = c(2,2,0,0))
+
+#latent variable factor loadings (table 5 in paper)
+```
+
+
+# References

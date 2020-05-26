@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<title>Interests and Self Efficacy: Distinct Constructs?</title>
+
+
+
+
+
+
+<!--
+Font-awesome icons ie github or twitter
+-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+
+<!--
+Google fonts api stuff
+-->
+<link href='https://fonts.googleapis.com/css?family=Schoolbell' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Frutiger' rel='stylesheet'>
+
+<!--
+Here are the required style attributes for css to make this poster work :)
+-->
+<style>
+@page {
+size: 46in 32in;
+margin: 0;
+padding: 0;
+background-color: #006747;
+}
+body {
+margin: 0px;
+padding: 0px;
+width: 46in;
+height: 32in;
+text-align: justify;
+font-size: 45px;
+background-color: #006747;
+color: #FFFFFF;
+}
+/* RMarkdown Class Styles */
+/* center align leaflet map,
+from https://stackoverflow.com/questions/52112119/center-leaflet-in-a-rmarkdown-document */
+.html-widget {
+margin: auto;
+position: sticky;
+margin-top: 2cm;
+margin-bottom: 2cm;
+}
+.leaflet.html-widget.html-widget-static-bound.leaflet-container.leaflet-touch.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom {
+position: sticky;
+width: 100%;
+}
+pre.sourceCode.r {
+background-color: #dddddd40;
+border-radius: 4mm;
+padding: 4mm;
+width: 75%;
+margin: auto;
+margin-top: 1em;
+margin-bottom: 1em;
+/* align-items: center; */
+}
+code.sourceCode.r{
+background-color: transparent;
+font-size: 20pt;
+border-radius: 2mm;
+}
+code {
+font-size: 25pt;
+font-family: monospace;
+background-color: #EDEBD124;
+color: #CFC493;
+padding: 1.2mm;
+line-height: 1;
+border-radius: 2mm;
+}
+caption {
+margin-bottom: 10px;
+font-size: 20pt;
+font-style: italic;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #CFC49320;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+  border-spacing: 0;
+  font-size: 40%;
+  border-style: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 1em;
+  padding-left: 1em;
+  line-height: 1em;
+}
+table {
+  margin: auto;
+}
+th {
+  padding-left: 5mm;
+  padding-right: 5mm;
+}
+.caption {
+font-size: 20pt;
+font-style: italic;
+padding-top: 0;
+}
+.references {
+font-size: 20px;
+line-height: 90%;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+float: left;
+padding: 0px;
+}
+.outer {
+width: 46in;
+height: 32in;
+-webkit-column-count: 2; /* Chrome, Safari, Opera */
+-moz-column-count: 2; /* Firefox */
+column-count: 2;
+-webkit-column-fill: auto;
+-moz-column-fill: auto;
+column-fill: auto;
+-webkit-column-rule-width: 50%;
+-moz-column-rule-width: 50%;
+column-rule-width: 50%;
+-webkit-column-rule-style: solid;
+-moz-column-rule-style: solid;
+column-rule-style: solid;
+-webkit-column-rule-color: black;
+-moz-column-rule-color: black;
+column-rule-color: black;
+-webkit-column-gap: 50%;
+background-color: #006747;
+font-family: Frutiger;
+color: #FFFFFF;
+}
+span.citation {
+  color: #EDEBD1;
+  font-weight: bold;
+}
+a {
+text-decoration: none;
+color: #EDEBD1;
+}
+#title {
+font-size: 125pt;
+text-align: left;
+margin: 0;
+line-height: 90%;
+border-bottom: 0;
+}
+#author {
+color: #CFC493;
+margin: 0;
+line-height: 90%;
+font-size: 1.17em;
+}
+#affiliation {
+padding-top: 1em;
+color: #EDEBD1;
+font-style: italic;
+font-size: 25px;
+margin: 0;
+}
+sup {
+color: #9CCB3B;
+}
+.affiliation sup {
+font-size: 20px;
+}
+.author sup {
+font-size: 30px;
+}
+.author_extra {
+color: #EDEBD1;
+margin: 0;
+line-height: 85%;
+font-size: 35px;
+}
+.outer h1 {
+text-align: center;
+margin-top: 0.5in;
+margin-bottom: 0.5in;
+}
+.outer h2 {
+text-align: center;
+}
+.outer p {
+color: #FFFFFF;
+}
+.outer ol {
+text-align: left;
+}
+.main {
+width: calc(46in / 2);
+height: 32in;
+position: absolute;
+margin-left: calc(46in / 4);
+background-color: #CFC493;
+color: #009374;
+font-family: Schoolbell;
+background-image: linear-gradient(#CFC493 50%, #EDEBD1);
+}
+.main strong {
+color: #FFFFFF;
+}
+img.main-img-left {
+width: 20%;
+left: 0.5in;
+bottom: 0.2in;
+position: absolute;
+}
+img.main-img-right {
+width: 18%;
+right: 0.5in;
+bottom: 0.2in;
+position: absolute;
+}
+.main p {
+padding-top: 20%;
+font-size: 170px;
+text-align: left;
+}
+.fab {
+color: #EDEBD1;
+font-size: 25px;
+}
+.twitter, i {
+color: #EDEBD1;
+font-size: 35px;
+text-decoration: none;
+}
+a.email {
+text-decoration: none;
+color: #EDEBD1;
+font-size: 35px;
+}
+.envelope {
+color: #EDEBD1;
+font-size: 5px;
+text-decoration: none;
+}
+.poster_wrap {
+width: 46in;
+height: 32in;
+padding: 0cm;
+background-color: #006747;
+}
+span > #tab:mytable {
+  font-weight: bold;
+}
+.section {
+  padding-left: 10mm;
+  padding-right: 10mm;
+}
+.main p {
+  padding-left: 30mm;
+  padding-right: 30mm;
+}
+.main_pic {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.orcid img {
+  width: 3%;
+}
+</style>
+</head>
+<body>
+
+
+<div class="poster_wrap">
+<div class="column outer">
+<br>
+<div class="title section">
+<h1 id="title">Interests and Self Efficacy: Distinct Constructs?</h1>
+<br>
+<h3 id="author" class="author">
+
+Matthew Zimmerman<sup> 1</sup><br>
+
+<a class='envelope'><i class="fas fa-envelope"></i></a> <a href="mailto:mdzimmerman@usf.edu" class="email">mdzimmerman@usf.edu</a> <br>
+ Brenton Wiernik<sup> 1</sup><br>
+<a class="twitter" href="https://mobile.twitter.com/bmwiernik"><i class="fab fa-twitter"></i>&nbsp;&nbsp;@bmwiernik</a><br>
+
+<a class='envelope'><i class="fas fa-envelope"></i></a> <a href="mailto:wiernik@usf.edu" class="email">wiernik@usf.edu</a> <br>
+</h3>
+
+<h5 id="author_extra" class="author_extra">
+ </h5>
+
+<p id="affiliation" class="affiliation">
+<sup>1</sup> Department of Psycology, University of South Florida
+</p>
+
+</div>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<ul>
+<li>Interactions between interests (<strong>I</strong>) and self-efficacy (<strong>SE</strong>), modeled by social cognitive carreer theory (SSCT), are used to predict domain relevent carreer paths.</li>
+<li><strong>SE</strong> is a precursor to <strong>I</strong> development, implying the two constructs are ‘related but distinct’.</li>
+</ul>
+<div class="figure">
+<img src="C:/Users/Matth/Pictures/placeholder4.jpg" alt="" />
+<p class="caption">SCCT Flowchart?</p>
+</div>
+<ul>
+<li>Previous meta-analytic results have found strong mean correlations between the two. Exsisting heterogeneity is attributed to tangible differences between the constructs.</li>
+<li>Specfically, SE is capturing specific orientations toward work activities that interest measures alone can not capture.</li>
+</ul>
+</div>
+<div id="objectives" class="section level1">
+<h1>Objectives</h1>
+<ul>
+<li>Illumintate potential measurement artefacts between I and SE measures by:
+<ol style="list-style-type: decimal">
+<li>Determining convergence between I and SE measures.</li>
+<li>Analyzing the structre of cross method corrallations.</li>
+<li>Using multi-trait multi-method (MMTM) factor analysis for each construct</li>
+</ol></li>
+</ul>
+<div class="figure">
+<img src="C:/Users/Matth/Pictures/placeholder5.jpg" alt="" />
+<p class="caption">RIASEC Hexagon</p>
+</div>
+<ul>
+<li>The structure of RIASEC interests is represented as a hexagon.</li>
+<li>If SE is tangibly different from I in this context, its structure orintation should be capturing more information than an I measure alone.</li>
+</ul>
+</div>
+<div id="methods" class="section level1">
+<h1>Methods</h1>
+<ul>
+<li>An exhaustive literature search resulted in 292 studies with unique samples made up of 834,087 people.</li>
+<li>Correlations were calculated using the R package psychmeta.</li>
+<li>The MMTM analysis a correlated-traits, correlated-uniqueness (CTCU) model was fit to a synthetic meta-analytic correlation matrix constructed to reflect meta-analytic mean observed (not corrected for unreliability) correlations among:
+<ol style="list-style-type: decimal">
+<li>Typical RIASEC interest scales</li>
+<li>Typical RIASEC self-efficacy scales</li>
+<li>RIASEC interest scales drawn from a different inventories</li>
+</ol></li>
+<li>To account for method variance the uniqueness’s for the six scales from the same method to covary.</li>
+<li>Confidence intervals, were found through the harmonic mean sample size across included correlations.</li>
+</ul>
+</div>
+<div id="results" class="section level1">
+<h1>Results</h1>
+<p>Cross method data
+<img src="C:/Users/Matth/Pictures/placeholder4.jpg" /></p>
+<p>Factor analysis data
+<img src="C:/Users/Matth/Pictures/placeholder5.jpg" /></p>
+</div>
+<div id="references" class="section level1">
+<h1>References</h1>
+</div>
+
+</div>
+<div class="main">
+<p><strong>Interests</strong> and <strong>self-efficacy</strong> largely capture the <strong>same</strong> underlying attitudes toward work tasks.<br><br> <img src="C:/Users/Matth/Pictures/placeholder1.jpg" class="main_pic" alt="This should be the radar plot" /></p>
+<img src="C:/Users/Matth/Pictures/placeholder2.jpg" class="main-img-left" alt="QR code for paper" />
+<img src="C:/Users/Matth/Pictures/placeholder3.jpg" class="main-img-right" alt="Lab logo?" />
+</div>
+</div>
+
+
+
+</body>
+</html>
