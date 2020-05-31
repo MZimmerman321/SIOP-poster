@@ -36,12 +36,12 @@ main_textcol:    "#009374"         #Color of txt
 main_findings:
   - "**Interests** and **self-efficacy** largely capture the **same** underlying attitudes toward work tasks." 
                             #Image middle main, use main_picwidth f/size
-  - '![This should be the radar plot](images\radarplot_old.jpg){.main_pic}'
-main_picwidth: 75%
+  - '![main_plot](images\lolipop_guild.jpg){.main_pic}'
+main_picwidth: 70%
                             #Bottom left main section image
 logoleft_name: ''    
                             #Bottom right main section image 
-logoright_name: '![USF logo?](images\usf_logo.jpg){.main-img-right}' 
+logoright_name: '![USF logo](images\usf_logo.jpg){.main-img-right}' 
                             #Final output options
 output: 
   posterdown::posterdown_betterland: 
@@ -74,12 +74,8 @@ knitr::write_bib(c('posterdown', 'rmarkdown','pagedown'), 'packages.bib')
 
 - **SE** is a precursor to **I** development, implying the two constructs are ‘related but distinct’. 
 
-```{r}
-
-
-
-
-
+```{r, out.width="90%" }
+knitr::include_graphics("images/scct.jpg")
 ```
 
 
@@ -90,6 +86,7 @@ knitr::write_bib(c('posterdown', 'rmarkdown','pagedown'), 'packages.bib')
 # Objectives
 
 - Illuminate potential measurement artefacts between I and SE measures by: 
+
    1. Determining convergence between I and SE measures. 
    2. Analyzing the structure of cross method correlations.
    3. Using multi-trait multi-method (MMTM) factor analysis for each construct
@@ -108,16 +105,15 @@ knitr::write_bib(c('posterdown', 'rmarkdown','pagedown'), 'packages.bib')
 # Results
 
 
-```{r myprettycode, echo=FALSE,collapse=TRUE, fig.cap='Latent Variable Factor Loadings', fig.height=3.5, out.width="80%"}
+```{r myprettycode, echo=FALSE,collapse=TRUE, fig.cap= 'Latent variable factor loadings for correlated trait–correlated uniqueness CFA model', fig.height=3.5, out.width="50%"}
 
 knitr::include_graphics("images/factor_loadings.jpg")
-#latent variable factor loadings (table 5 in paper)
+
 ```
-Latent variable factor loadings for correlated trait–correlated uniqueness CFA model
-Diff. inv. = interest scale drawn from a different inventory than the other interest/self-efficacy scales. 
-Values are factor loadings of the 
-interest/efficacy scales for each RIASEC domain onto a common latent RIASEC construct, Latent RIASEC factors and scale residuals within each method were permitted to correlate. 
-The model showed moderate fit: χ2(75), Nharmonic = 3 903.936) = 2566.848, comparative fit index = .943, root mean square error of approximation = .092 [.089, .096], mean absolute residual correlation = .042. 
-Only sources of misfit were modest overestimates of correlations among select self-efficacy scales and between select self-efficacy scales and different-inventory interest scales.
+
+- The model showed moderate fit: 
+χ2(75), Nharmonic = 3 903.936) = 2566.848, comparative fit index = .943, root mean square error of approximation = .092 [.089, .096], mean absolute residual correlation = .042. 
+
+- Only sources of misfit were modest overestimates of correlations among select self-efficacy scales and between select self-efficacy scales and different-inventory interest scales.
 
 # References
