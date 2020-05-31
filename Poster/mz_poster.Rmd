@@ -75,44 +75,9 @@ knitr::write_bib(c('posterdown', 'rmarkdown','pagedown'), 'packages.bib')
 - **SE** is a precursor to **I** development, implying the two constructs are ‘related but distinct’. 
 
 ```{r}
-DiagrammeR::grViz("digraph {
-
-graph [layout = dot, rankdir = LR, nodesep = .5]
-
-node [shape = rectangle, style = filled, fillcolor = yellow]
-pi [label = 'Person Inputs']
-bg [label = 'Background Contextual Affordances']
-
-node [shape = rectangle, style = filled, fillcolor = green]
-le [label =  'Learning Experiences']
-
-node [shape = rectangle, style = filled, fillcolor = yellow]
-se [label = 'Self-Efficacy']
-oe [label = 'Outcome expectations']
-
-node [shape = rectangle, style = filled, fillcolor = green]
-in [label = 'Interests']
-ci [label = 'Context Influences Proximal to Choice Behavior']
-
-node [shape = rectangle, style = filled, fillcolor = pink]
-cg [label = 'Choice Goals']
-node [shape = rectangle, style = filled, fillcolor = orange]
-ca [label = 'Choice Actions']
-node [shape = rectangle, style = filled, fillcolor = grey]
-pr [label = 'Preformance Attinments']
-
-subgraph cluster {in cg ca pr}
-
-{rank = same bg -> pi -> bg} -> le
-pi -> ci -> {cg ca}
-{{le} -> {rank = same se -> oe}} -> {in cg ca}
-{{in} -> {cg} -> {ca} -> {pr}}
-pr -> le
-
-}"
 
 
-)
+
 
 
 ```
