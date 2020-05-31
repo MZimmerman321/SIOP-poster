@@ -10,6 +10,10 @@
 
 <title>Interests and Self Efficacy: Distinct Constructs?</title>
 
+<script src="mz_poster_files/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="mz_poster_files/viz-1.8.2/viz.js"></script>
+<link href="mz_poster_files/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="mz_poster_files/grViz-binding-1.0.6.1/grViz.js"></script>
 
 
 
@@ -24,8 +28,8 @@ Font-awesome icons ie github or twitter
 <!--
 Google fonts api stuff
 -->
-<link href='https://fonts.googleapis.com/css?family=Frutiger' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Frutiger' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Helvetica' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Helvetica' rel='stylesheet'>
 
 <!--
 Here are the required style attributes for css to make this poster work :)
@@ -144,7 +148,7 @@ column-rule-style: solid;
 column-rule-color: black;
 -webkit-column-gap: 50%;
 background-color: #006747;
-font-family: Frutiger;
+font-family: Helvetica;
 color: #FFFFFF;
 }
 span.citation {
@@ -211,7 +215,7 @@ position: absolute;
 margin-left: calc(46in / 4);
 background-color: #CFC493;
 color: #009374;
-font-family: Frutiger;
+font-family: Helvetica;
 background-image: linear-gradient(#CFC493 50%, #EDEBD1);
 }
 .main strong {
@@ -309,38 +313,25 @@ Matthew Zimmerman<sup> 1</sup><br>
 </p>
 
 </div>
-<div id="introduction" class="section level1">
-<h1>Introduction</h1>
 <ul>
-<li>Interactions between interests (<strong>I</strong>) and self-efficacy (<strong>SE</strong>), modeled by social cognitive carreer theory (SSCT), are used to predict domain relevent carreer paths.</li>
-<li><strong>SE</strong> is a precursor to <strong>I</strong> development, implying the two constructs are ‘related but distinct’.</li>
+<li><p>Interactions between interests (<strong>I</strong>) and self-efficacy (<strong>SE</strong>), modeled by social cognitive career theory (SSCT), are used to predict domain relevant career paths.</p></li>
+<li><p><strong>SE</strong> is a precursor to <strong>I</strong> development, implying the two constructs are ‘related but distinct’.</p></li>
 </ul>
-<div class="figure">
-<img src="images/placeholder3.jpg" alt="" />
-<p class="caption">SCCT Flowchart?</p>
-</div>
+<div id="htmlwidget-922d7873acc291bd7494" style="width:100%;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-922d7873acc291bd7494">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = LR, nodesep = .5, ranksep = .25]\n\nnode [shape = rectangle, style = filled, fillcolor = yellow]\npi [label = \"Person Inputs\"]\nbg [label = \"Background Contextual Affordances\"]\n\nnode [shape = rectangle, style = filled, fillcolor = green]\nle [label =  \"Learning Experiences\"]\n\nnode [shape = rectangle, style = filled, fillcolor = yellow]\nse [label = \"Self-Efficacy\"]\noe [label = \"Outcome expectations\"]\n\nnode [shape = rectangle, style = filled, fillcolor = green]\nin [label = \"Interests\"]\nci [label = \"Context Influences Proximal to Choice Behavior\"]\n\nnode [shape = rectangle, style = filled, fillcolor = pink]\ncg [label = \"Choice Goals\"]\nnode [shape = rectangle, style = filled, fillcolor = orange]\nca [label = \"Choice Actions\"]\nnode [shape = rectangle, style = filled, fillcolor = grey]\npr [label = \"Preformance Attinments\"]\n\n\n{rank = same bg -> pi -> bg} -> le\npi -> ci -> {cg ca}\n{{le} -> {rank = same se -> oe}} -> {in cg ca}\n{{in} -> {cg} -> {ca} -> {pr}}\npr -> le\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 <ul>
-<li>Previous meta-analytic results have found strong mean correlations between the two. Exsisting heterogeneity is attributed to tangible differences between the constructs.</li>
-<li>Specfically, SE is capturing specific orientations toward work activities that interest measures alone can not capture.</li>
+<li><p>Previous meta-analytic results have found strong mean correlations between the two. Existing heterogeneity is attributed to tangible differences between the constructs.</p></li>
+<li><p>Specifically, SE is capturing specific orientations toward work activities that interest measures alone can not capture.</p></li>
 </ul>
-</div>
 <div id="objectives" class="section level1">
 <h1>Objectives</h1>
 <ul>
-<li>Illumintate potential measurement artefacts between I and SE measures by:
+<li>Illuminate potential measurement artefacts between I and SE measures by:
 <ol style="list-style-type: decimal">
 <li>Determining convergence between I and SE measures.</li>
-<li>Analyzing the structre of cross method corrallations.</li>
+<li>Analyzing the structure of cross method correlations.</li>
 <li>Using multi-trait multi-method (MMTM) factor analysis for each construct</li>
 </ol></li>
-</ul>
-<div class="figure">
-<img src="images/placeholder4.jpg" alt="" />
-<p class="caption">RIASEC Hexagon</p>
-</div>
-<ul>
-<li>The structure of RIASEC interests is represented as a hexagon.</li>
-<li>If SE is tangibly different from I in this context, its structure orintation should be capturing more information than an I measure alone.</li>
 </ul>
 </div>
 <div id="methods" class="section level1">
@@ -348,22 +339,30 @@ Matthew Zimmerman<sup> 1</sup><br>
 <ul>
 <li>An exhaustive literature search resulted in 292 studies with unique samples made up of 834,087 people.</li>
 <li>Correlations were calculated using the R package psychmeta.</li>
-<li>The MMTM analysis a correlated-traits, correlated-uniqueness (CTCU) model was fit to a synthetic meta-analytic correlation matrix constructed to reflect meta-analytic mean observed (not corrected for unreliability) correlations among:
+<li>The MMTM analysis: a correlated-traits, correlated-uniqueness (CTCU) model was fit to a synthetic meta-analytic correlation matrix constructed to reflect meta-analytic mean observed (not corrected for unreliability) correlations among:
 <ol style="list-style-type: decimal">
 <li>Typical RIASEC interest scales</li>
 <li>Typical RIASEC self-efficacy scales</li>
 <li>RIASEC interest scales drawn from a different inventories</li>
 </ol></li>
-<li>To account for method variance the uniqueness’s for the six scales from the same method to covary.</li>
+<li>To account for method variance the uniqueness’s for the six scales from the same method to co-vary.</li>
 <li>Confidence intervals, were found through the harmonic mean sample size across included correlations.</li>
 </ul>
 </div>
 <div id="results" class="section level1">
 <h1>Results</h1>
-<p>Cross method data
-<img src="images/placeholder5.jpg" /></p>
-<p>Factor analysis data
-<img src="images/placeholder5.jpg" /></p>
+<div class="figure" style="text-align: center"><span id="fig:myprettycode"></span>
+<img src="images/factor_loadings.jpg" alt="Latent Variable Factor Loadings" width="80%" />
+<p class="caption">
+Figure 1: Latent Variable Factor Loadings
+</p>
+</div>
+<p>Latent variable factor loadings for correlated trait–correlated uniqueness CFA model
+Diff. inv. = interest scale drawn from a different inventory than the other interest/self-efficacy scales.
+Values are factor loadings of the
+interest/efficacy scales for each RIASEC domain onto a common latent RIASEC construct, Latent RIASEC factors and scale residuals within each method were permitted to correlate.
+The model showed moderate fit: χ2(75), Nharmonic = 3 903.936) = 2566.848, comparative fit index = .943, root mean square error of approximation = .092 [.089, .096], mean absolute residual correlation = .042.
+Only sources of misfit were modest overestimates of correlations among select self-efficacy scales and between select self-efficacy scales and different-inventory interest scales.</p>
 </div>
 <div id="references" class="section level1">
 <h1>References</h1>
@@ -372,8 +371,8 @@ Matthew Zimmerman<sup> 1</sup><br>
 </div>
 <div class="main">
 <p><strong>Interests</strong> and <strong>self-efficacy</strong> largely capture the <strong>same</strong> underlying attitudes toward work tasks.<br><br> <img src="images/radarplot_old.jpg" class="main_pic" alt="This should be the radar plot" /></p>
-<img src="images/placeholder1.jpg" class="main-img-left" alt="QR code for paper" />
-<img src="images/placeholder2.jpg" class="main-img-right" alt="Do we have a lab logo? USF logo?" />
+
+<img src="images/usf_logo.jpg" class="main-img-right" alt="USF logo?" />
 </div>
 </div>
 
