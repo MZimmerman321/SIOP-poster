@@ -77,7 +77,7 @@ knitr::write_bib(c('posterdown', 'rmarkdown','pagedown'), 'packages.bib')
 ```{r}
 DiagrammeR::grViz("digraph {
 
-graph [layout = dot, rankdir = LR, nodesep = .5, ranksep = .25]
+graph [layout = dot, rankdir = LR, nodesep = .5]
 
 node [shape = rectangle, style = filled, fillcolor = yellow]
 pi [label = 'Person Inputs']
@@ -101,6 +101,7 @@ ca [label = 'Choice Actions']
 node [shape = rectangle, style = filled, fillcolor = grey]
 pr [label = 'Preformance Attinments']
 
+subgraph cluster {in cg ca pr}
 
 {rank = same bg -> pi -> bg} -> le
 pi -> ci -> {cg ca}
