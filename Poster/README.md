@@ -10,13 +10,9 @@ Main package used to format the poster is [posterdown](https://github.com/brentt
 # To Do
 Last things:
 
-- Citatiations and captions, first one is not captioned correctly 
+- Citatiations and captions
 
-- Formatting of center image. Will it let me mark it as a figure??? That graph is not easier to read if I make it lol. fix the text size and error bar highlighting. 
-
-- Seperate text from body and main sections better. 
-
-- Make the model fit data into a table and make sure numbers are all correct. 
+- Formatting of center image. Will it let me mark it as a figure??? text size and error bar highlighting. 
 
 - GRAMMER and SPELLCHECK 
    - also file make sure file size is correct. 
