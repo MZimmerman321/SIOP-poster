@@ -9,7 +9,6 @@ Main package used to format the poster is [posterdown](https://github.com/brentt
 
 # To Do
 Last things:
-- QR code (do this before finish main plot so size is eaiser to figure out)
 
 - Citatiations and captions, first one is not captioned correctly 
 
