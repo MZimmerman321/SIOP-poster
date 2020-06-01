@@ -51,7 +51,9 @@ output:
     highlight: espresso
     number_sections: false
 link-citations: True
-bibliography: 
+bibliography: citations.json
+reference_textsize: "20px"
+csl: https://www.zotero.org/styles/apa
 #After knit open output in browser and then save as PDF, make sure to include background graphics. output directly to pdf is sus.
 ---
 
@@ -74,7 +76,7 @@ knitr::include_graphics("images/scct.jpg")
 ```
 - **SE** is a precursor to **I** development, implying the two constructs are ‘related but distinct’.
 - Previous meta-analytic results have found strong mean correlations between the two. 
-- Existing heterogeneity is attributed to tangible differences between the constructs.@rottinghausRelationSelfefficacyInterests2003
+- Existing heterogeneity is attributed to tangible differences between the constructs. [@rottinghausRelationSelfefficacyInterests2003]
     - But is it more likely that this is due to method effects?
     
 # Objectives
