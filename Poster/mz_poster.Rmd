@@ -82,7 +82,7 @@ knitr::include_graphics("images/scct.jpg")
     
 # Objectives
 
-- Illuminate potential measurement artefacts between I and SE measures by: 
+- Illuminate potential measurement artifacts between I and SE measures by: 
     1. Determining convergence between I and SE measures. 
     2. Analyzing the structure of cross method correlations.
     3. Using multi-trait multi-method (MMTM) factor analysis for each construct
@@ -113,6 +113,6 @@ knitr::include_graphics("images/factor_loadings.jpg")
     - Root mean square error of approximation = 0.092 [0.089,0.096]  
     - Mean absolute residual correlation = 0.042 
 
-- Only sources of misfit were modest overestimates of correlations among select self-efficacy scales and between select self-efficacy scales anddifferent-inventory interest scales.
+- Only sources of misfit were modest overestimates of correlations among select self-efficacy scales and between select self-efficacy scales and different-inventory interest scales.
 
 # References
