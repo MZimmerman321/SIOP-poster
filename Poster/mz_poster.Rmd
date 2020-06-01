@@ -18,7 +18,7 @@ author:
   - name: Brenton Wiernik
     affil: 1
     twitter: bmwiernik
-    email: wiernik@usf.edu
+    email: brenton@wiernik.org
     orcid: 
     main: true
 affiliation_textcol: "#EDEBD1"     #Color of affiliation txt
@@ -34,7 +34,7 @@ main_fontfamily: "Helvetica"         #Font (use main_textsize f/ size change)
 main_textcol:    "#009374"         #Color of txt 
                             #Content in main section
 main_findings:
-  - "**Interests** and **self-efficacy** largely capture the **same** underlying attitudes toward work tasks." 
+  - "Are **interests** and **self-efficacy** distinct constructs?\n\n\n\nNo." 
                             #Image middle main, use main_picwidth f/size
   - '![main_plot](images\lolipop_guild.jpg){.main_pic}'
 main_picwidth: 70%
