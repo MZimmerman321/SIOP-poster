@@ -12,7 +12,4 @@ Last things:
 
 - Citatiations and captions
 
-- Formatting of center image. Will it let me mark it as a figure??? text size and error bar highlighting. 
-
-- GRAMMER and SPELLCHECK 
-   - also file make sure file size is correct. 
+- Formatting of center image text size and error bar highlighting. 
