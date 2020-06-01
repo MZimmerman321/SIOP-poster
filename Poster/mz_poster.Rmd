@@ -51,7 +51,7 @@ output:
     highlight: espresso
     number_sections: false
 link-citations: True
-bibliography: packages.bib
+bibliography: 
 #After knit open output in browser and then save as PDF, make sure to include background graphics. output directly to pdf is sus.
 ---
 
@@ -66,10 +66,6 @@ knitr::opts_chunk$set(results = 'asis',
 options(knitr.table.format = "html") 
 ```
 
-
-```{r, include=FALSE}
-knitr::write_bib(c('posterdown', 'rmarkdown','pagedown'), 'packages.bib')
-```
 #
 - Interactions between interests (**I**) and self-efficacy (**SE**) are used to predict domain relevant career paths.
 
@@ -78,12 +74,9 @@ knitr::include_graphics("images/scct.jpg")
 ```
 - **SE** is a precursor to **I** development, implying the two constructs are ‘related but distinct’.
 - Previous meta-analytic results have found strong mean correlations between the two. 
-- Existing heterogeneity is attributed to tangible differences between the constructs.[ [@rottinghausRelationSelfefficacyInterests2003]
+- Existing heterogeneity is attributed to tangible differences between the constructs.@rottinghausRelationSelfefficacyInterests2003
     - But is it more likely that this is due to method effects?
     
-```{r, include=FALSE}
-knitr::write_bib(c('posterdown', 'rmarkdown','pagedown'), 'packages.bib')
-```
 # Objectives
 
 - Illuminate potential measurement artefacts between I and SE measures by: 
