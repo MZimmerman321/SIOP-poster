@@ -28,7 +28,7 @@ affiliation:
                             #txt options body of poster 
 font_family: "Helvetica" 
 body_textcol: "#FFFFFF"            #Txt color
-body_textsize: ""
+body_textsize: "42px"
                             #Txt and images middle section (main) of posterSchoolbell
 main_fontfamily: "Helvetica"         #Font (use main_textsize f/ size change)
 main_textcol:    "#009374"         #Color of txt 
@@ -71,12 +71,13 @@ options(knitr.table.format = "html")
 #
 - Interactions between interests (**I**) and self-efficacy (**SE**) are used to predict domain relevant career paths.
 
-```{r, echo=FALSE, collapse=TRUE, fig.cap= 'Social Cognitive Career Theory model ', fig.height=3.5, out.width="90%" }
+```{r, echo=FALSE, collapse=TRUE, fig.cap= 'Social Cognitive Career Theory model adopted from Lent et al., 1994', fig.height=3.5, out.width="90%" }
 knitr::include_graphics("images/scct.jpg")
 ```
-- **SE** is a precursor to **I** development, implying the two constructs are ‘related but distinct’.
-- Previous meta-analytic results have found strong mean correlations between the two. 
-- Existing heterogeneity is attributed to tangible differences between the constructs. [@rottinghausRelationSelfefficacyInterests2003]
+- **SE** is a precursor to **I** development, implying the two constructs are ‘related but distinct’. [@lentUnifyingSocialCognitive1994]
+- Previous meta-analytic results have found strong mean correlations between the two. [@rottinghausRelationSelfefficacyInterests2003]
+- Existing heterogeneity is attributed to tangible differences between the constructs. 
+
     - But is it more likely that this is due to method effects?
     
 # Objectives
