@@ -1,4 +1,5 @@
 # Library
+library(tidyverse)
 library(ggplot2)
 library(dplyr)
 library(hrbrthemes)
@@ -19,6 +20,14 @@ ggplot() +
   theme_minimal() +
   theme(
     legend.position = "none",
+  ) +
+  theme(
+    panel.background = element_rect(fill = "transparent"), 
+    plot.background = element_rect(fill = "transparent", color = NA), 
+    panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(),
+    legend.background = element_rect(fill = "transparent"), 
+    legend.box.background = element_rect(fill = "transparent")
   ) +
   labs(title = "Convergent corralations between measures of interests and self-efficacy") +
   xlab("") +
